@@ -21,7 +21,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Pendaftaran</a>
+            <a class="nav-link active" aria-current="page" href="#">Pendaftaran Mahasiswa Baru</a>
           </div>
         </div>
       </div>
@@ -29,38 +29,38 @@
 
     <div class="container bg-white rounded mt-4 p-3">
 
-      <h2 class="text-center my-4 pb-3  border-3">Data Profil Mahasiswa</h2>
+      <h2 class="text-center my-4 pb-3  border-3 border dark">Data Profil Mahasiswa</h2>
       <form action="konfirmasipmb.php" method="post">
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Jalur Penerimaan Mahasiswa Baru
-          <select name="jalurPenerimaan" class="form-select mt-2">
+          <select name="jalurpenerimaan" class="form-select mt-2">
             <option selected>Pilih Jalur Penerimaan</option>
             <option value="TA 2022/2023 RATA-RATA RAPOR">TA 2022/2023 RATA-RATA RAPOR</option>
             <option value="TA 2022/2023 PERINGKAT KELAS">TA 2022/2023 PERINGKAT KELAS</option>
             <option value="TA 2022/2023 UJIAN SARING MASUK (USM)">TA 2022/2023 UJIAN SARING MASUK (USM)</option>
         </select>
         </div>
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Nama Lengkap (Sesuai Akte Kelahiran)
-          <input type="text" class="form-control mt-2" name="name" placeholder="Nama Lengkap">
+          <input type="text" class="form-control mt-2" name="nama" placeholder="Nama Lengkap (Susuai Akte)">
         </div>
       </div>
 
       <div class="row mt-4">
-        <div class="col-12 col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Tempat & Tanggal Lahir
-          <input type="text" class="form-control mt-2" name="TTL" placeholder="Tempat, DD/MM/YYYY">
+          <input type="text" class="form-control mt-2" name="TTL" placeholder="Tempat, TT-BB-TTTT">
         </div>
-        <div class="col-12 col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Nomor Induk Kependudukan (KTP / KK)
-          <input type="text" class="form-control mt-2" name="NIK" placeholder="NIK">
+          <input type="text" class="form-control mt-2" name="NIK" placeholder="NIK (Sesuai KTP/KK)">
         </div>
       </div>
 
       <div class="row mt-4">
-        <div class="col-12 col-md-4 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Jenis Kelamin
           <select name="jenisKelamin" class="form-select mt-2">
             <option selected>Jenis Kelamin</option>
@@ -68,7 +68,7 @@
             <option value="Perempuan">Perempuan</option>
         </select>
         </div>
-        <div class="col-12 col-md-4 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Agama
           <select name="agama" class="form-select mt-2">
             <option selected>Agama</option>
@@ -80,7 +80,7 @@
             <option value="Konghucu">Konghucu</option>
         </select>
         </div>
-        <div class="col-12 col-md-4 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Status
           <select name="status" class="form-select mt-2">
             <option selected>Status</option>
@@ -93,61 +93,61 @@
       <div class="row mt-4">
         <div class="col-12 mb-2">
           <label for="">Alamat Lengkap
-          <textarea class="form-control mt-2" name="alamat" placeholder="Jl. Abcd No. 00, RT/01 RW/02" style="height: 100px;"></textarea>
+          <textarea class="form-control mt-2" name="alamat" placeholder="Jl. Mawar No. 00, RT/01 RW/02" style="height: 100px;"></textarea>
         </div>
-        <div class="col-md-6 mt-4 mb-2">
+        <div class="col-12 mt-4 mb-2">
           <label for="">Kode Pos
-          <input type="text" class="form-control mt-2" name="kodepos" placeholder="15xxx">
+          <input type="text" class="form-control mt-2" name="kodepos" placeholder="00000">
         </div>
-        <div class="col-md-6 mt-4 mb-2">
+        <div class="col-12 mt-4 mb-2">
           <label for="">Email
-          <input type="email" class="form-control mt-2" name="email" placeholder="yourname@example.com">
+          <input type="email" class="form-control mt-2" name="email" placeholder="nama@email.com">
         </div>
       </div>
 
       <h3 class="mt-5  border-2 pb-3 text-center">Data Sekolah Asal Calon Mahasiswa</h3>
 
       <div class="row mt-4">
-        <div class="col-md-6">
+        <div class="col-12">
           <label for="">Asal Sekolah
-          <input type="text" name="asalsekolah" class="form-control mt-2" placeholder="SMA / SMK">
+          <input type="text" name="asalsekolah" class="form-control mt-2" placeholder="SMA/SMK/MA">
         </div>
-        <div class="col-md-6">
+        <div class="col-12">
           <label for="">Tahun Lulus
-          <input type="number" name="tahunlulus" class="form-control mt-2" placeholder="YYYY">
+          <input type="number" name="tahunlulus" class="form-control mt-2" placeholder="Tahun">
         </div>
       </div>
 
       <h3 class="mt-5  border-2 pb-3 text-center">Data Orang Tua Calon Mahasiswa</h3>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-4">
+        <div class="col-12 mb-4">
           <label for="">Nama Ayah
           <input type="text" name="ayah" class="form-control mt-2" placeholder="Nama Ayah">
         </div>
-        <div class="col-md-6 mb-4">
+        <div class="col-12 mb-4">
           <label for="">Nama Ibu
           <input type="text" name="ibu" class="form-control mt-2" placeholder="Nama Ibu">
         </div>
         <div class="col-12 mb-2">
           <label for="">Alamat Lengkap
-          <textarea class="form-control mt-2" name="alamatortu" placeholder="Jl. Abcd No. 00, RT/01 RW/02" style="height: 100px;"></textarea>
+          <textarea class="form-control mt-2" name="alamatortu" placeholder="Jl.Mawar No. 00, RT/01 RW/02" style="height: 100px;"></textarea>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-md-6 mt-4 mb-2">
+        <div class="col-12 mt-4 mb-2">
           <label for="">Kode Pos
-          <input type="text" class="form-control mt-2" name="kodeposortu" placeholder="15xxx">
+          <input type="text" class="form-control mt-2" name="kodeposortu" placeholder="0000">
         </div>
-        <div class="col-md-6 mt-4 mb-2">
+        <div class="col-12 mt-4 mb-2">
           <label for="">Email
-          <input type="email" class="form-control mt-2" name="emailortu" placeholder="yourname@example.com">
+          <input type="email" class="form-control mt-2" name="emailortu" placeholder="nama@email.com">
         </div>
       </div>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pendidikan Terakhir Ayah
           <select name="pendidikanayah" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -162,7 +162,7 @@
               <option value="I - Doktoral (S3)">I - Doktoral (S3)</option>
           </select>
         </div>
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pendidikan Terakhir Ibu
           <select name="pendidikanibu" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -180,7 +180,7 @@
       </div>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Status Ayah
           <select name="statusayah" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -188,7 +188,7 @@
             <option value="Menikah">Menikah</option>
         </select>
         </div>
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Status Terakhir Ibu
           <select name="statusibu" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -199,20 +199,20 @@
       </div>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pekerjaan Ayah
-          <input type="text" name="pekerjaanayah" class="form-control mt-2" placeholder="Nama Ayah">
+          <input type="text" name="pekerjaanayah" class="form-control mt-2" placeholder="Nama Ayah Kandung">
         </div>
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pekerjaan Ibu
-          <input type="text" name="pekerjaanibu" class="form-control mt-2" placeholder="Nama Ibu">
+          <input type="text" name="pekerjaanibu" class="form-control mt-2" placeholder="Nama Ibu Kandung">
         </div>
       </div>
 
       <h3 class="mt-5  border-2 pb-3 text-center">Peminatan Program Studi</h3>
 
       <div class="row mt-4">
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pilihan Program Studi 1
           <select name="prodi1" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -228,7 +228,7 @@
             <option value="Psikologi">Psikologi</option>
         </select>
         </div>
-        <div class="col-md-6 mb-2">
+        <div class="col-12 mb-2">
           <label for="">Pilihan Program Studi 2
           <select name="prodi2" class="form-select mt-2">
             <option selected>Pilih</option>
@@ -279,9 +279,9 @@
         <p class="lead fs-6 text-center mt-3"><i class="bi bi-geo-alt-fill"></i>  Universitas Pembangunan Jaya - Jl. Cendrawasih Raya Blok B7/P, Sawah Baru, Kec. Ciputat, Kota Tangerang Selatan, Banten 15413.</p>
       </div>
 
-      <div class="row mt-3">
+      <div class="row mt-4">
         <div class="col-12 d-flex justify-content-center">
-          <button class="btn btn-outline-dark">Submit</button>
+          <button class="btn btn-outline-dark" name="tombol">Submit</button>
         </div>
       </div>
       </form>
