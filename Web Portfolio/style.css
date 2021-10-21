@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.warna1{
+  background: linear-gradient(180deg,#B6F0F1,#F46A5E);
+}
+.warna2{
+  background: linear-gradient(180deg,#2365AB,#d6d6d6);
+}
+.warna3{
+  background: linear-gradient(180deg,#ed66ff,#EAE341);
+}
+.warna4{
+  background: linear-gradient(180deg,#000000,#ffffff);
+}
+.navbar-brand{
+  
+  font-size: 25px;
+  box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+  transition: 1s linear;
+}
+.navbar-brand:hover {
+  transform: scale(1.15);
+}
+.nav-link{
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.nav-link:hover {
+  transform: scale(1.5);
+}
+.text{
+  transition: 1s ease-in-out;
+}
+.text:hover {
+  transform: scale(1.10);
+}
+.gambar{
+  transition: 1s ease-in-out;
+}
+.gambar:hover {
+  transform: scale(1.15);
+}
+.border1{
+  background-color: antiquewhite;
+  border-style: linear;
+  border-color:rgb(0, 0, 0);
+}
+.font1{
+  font-family: 'Festive', cursive;
+}
+.font2{
+  font-family: 'Architects Daughter', cursive;
+}
+.font3{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (max-width: 768px){
+}
+.justify{
+  text-align: center;
+}
+footer{
+  margin-bottom: 100%;
+}
